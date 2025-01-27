@@ -114,16 +114,16 @@ const App = () => {
         ))}
       </div>
       {/* {Flter-Apps} */}
-      <div className="grid lg:grid-cols-7 grid-cols-4 lg:gap-4 gap-2 max-w-xl">
+      <div className="grid lg:grid-cols-7  grid-cols-4 lg:gap-4 gap-2 max-w-xl">
         {filterApps.length > 0 ? (
           filterApps.map((app, index) => (
             <div key={index}>
               <img
                 src={appImages[app]}
-                className="lg:w-16 w-10 lg:h-16 h-10 border border-pink-600 border-spacing-3 lg:p-2 p-1 rounded-full mb-2"
+                className="lg:w-16 w-10 ml-5 lg:ml-0  lg:h-16 h-10 border border-pink-600 border-spacing-3 lg:p-2 p-1 rounded-full mb-2"
                 alt={app}
               />
-              <p className="text-[11px] font-mono lg:text-[14px] break-words truncate text-center font-medium">
+              <p className="text-[11px] text-center font-mono lg:text-[14px] break-words truncate  font-medium">
                 {app}
               </p>
             </div>
